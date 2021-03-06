@@ -1,19 +1,5 @@
 :root {
     font-size: 30px;
-    --ca: white;
-    --cb: #71ee7c;
-    --cb-t: #73f388a6;
-    --cc: #3ce0a9;
-    --cd: #2da569;
-    --ce: #2b8f79;
-    --cf: #1b6e5c;
-    --cg: #163333;
-
-    --ga1: #1b6e5c;
-    --ga2: #163333;
-
-    --calt1: #75ffc6;
-    --calt2: #e03cbc;
 }
 
 .ocean {
@@ -35,13 +21,16 @@
 
 .jade {
     --ca: white;
-    --cb: #71ee7c;
-    --cb-t: #73f388a6;
-    --cc: #3ce0a9;
+    --cb: #71ee96;
+    --cb-t: #73f3a4a6;
+    --cc: #5aeeb0;
     --cd: #2da569;
     --ce: #2b8f79;
-    --cf: #1b6e5c;
+    --cf: #2b8f79;
     --cg: #163333;
+
+    --ga1: #1b6e5c;
+    --ga2: #163333;
 
     --calt1: #75ffc6;
     --calt2: #e03cbc;
@@ -217,14 +206,19 @@ a.link {
     display: table;
 }
 
-#portrait {
-    width: 250px;
+.illustration {
     margin: 0 auto;
     margin-top: 1rem;
     display: table;
     margin-bottom: 1rem;
     padding: 0.3rem;
     border: solid 0.1rem var(--cf);
+}
+
+#portrait {
+    vertical-align: bottom;
+    background-color: var(--cf);
+    width: 250px;
 }
 
 .footer {
