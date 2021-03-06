@@ -193,12 +193,6 @@ a.link {
     box-shadow: 0rem 0rem 0.5rem var(--cb-t);
 }
 
-.nav-title:hover + link-container {
-    transition: all 0.1s;
-    border: solid 0.1rem var(--cb);
-    box-shadow: 0rem 0rem 0.5rem var(--cb-t);
-}
-
 .nav-title.desc {
     color: var(--cg);
     font-size: 0.5rem;
