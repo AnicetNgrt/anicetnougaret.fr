@@ -68,13 +68,17 @@ a:visited {
 }
 
 body {
-    max-width: 100%;
     overflow-x: hidden;
+    background-color: var(--cf);
+}
+
+.content {
+    min-height: calc(100vh - 4.8rem);
+    padding-top: 0.1rem;
     background-attachment:fixed;
-    height:100%;
     background-image: linear-gradient(147deg, var(--ga1) 0%, var(--ga2) 24%);
     background-color: var(--cg);
-    margin-top: -6rem;
+    padding-bottom: 3rem;
 }
 
 .title {
@@ -189,6 +193,12 @@ a.link {
     box-shadow: 0rem 0rem 0.5rem var(--cb-t);
 }
 
+.nav-title:hover + link-container {
+    transition: all 0.1s;
+    border: solid 0.1rem var(--cb);
+    box-shadow: 0rem 0rem 0.5rem var(--cb-t);
+}
+
 .nav-title.desc {
     color: var(--cg);
     font-size: 0.5rem;
@@ -197,7 +207,6 @@ a.link {
 .center-div {
     margin: 0 auto;
     margin-top: 20vh;
-    display: table;
 }
 
 .center-div-no-vertical {
@@ -208,28 +217,29 @@ a.link {
 
 .illustration {
     margin: 0 auto;
-    margin-top: 1rem;
     display: table;
+    margin-top: 0.5rem;
     margin-bottom: 1rem;
-    padding: 0.3rem;
-    border: solid 0.1rem var(--cf);
 }
 
 #portrait {
     vertical-align: bottom;
     background-color: var(--cf);
     width: 250px;
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
 }
 
 .footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
     padding-top: 0.5rem;
     padding-bottom: .5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    box-sizing: border-box; width: 100%;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    box-sizing: border-box; 
+    width: 100%;
     background-color: var(--cf);
 }
 
@@ -258,15 +268,16 @@ a.link {
 }
 
 .sticky{
-    position: sticky;
-    left: calc(100vw - 2rem);
+    position: absolute;
+    left: calc(100vw - 2.5rem);
     z-index: 100;
-    top: -0.5rem;
-    width: 1.5rem;
+    height: 100%;
 }
 
 .theme-togglers {
-    width: auto;
+    position: sticky;
+    top: 0rem;
+    width: 1.5rem;
     transition: all 0.3s;
     margin-top: 0.1rem;
     padding: 0.3rem;
@@ -301,18 +312,23 @@ a.link {
 
 @media (max-aspect-ratio: 1/1) {
 
-    body {
+
+    .content {
         background-color: var(--cg);
-        background-image: linear-gradient(147deg, var(--cg) 0%, var(--cg) 54%);
-        margin-top: -4.5rem;
+        background-image: none;
+        width: 100vw;
     }
 
     .center-div {
-        padding: 1rem;
+        padding: 0.5rem;
         padding-top: 0;
         margin: 0 auto;
-        margin-top: 0.5rem;
+        margin-top: -0.5rem;
         display: table;
+    }
+
+    .center-div-no-vertical {
+        margin-top: 0.5rem;
     }
 
     .title {
@@ -356,11 +372,6 @@ a.link {
         display: block;
     }
 
-    .footer {
-        position: relative;
-        margin-top: 2rem;
-    }
-
     .footer > .desc {
         font-size: 0.45rem;
     }
@@ -380,7 +391,11 @@ a.link {
     }
 
     .sticky {
-        left: calc(100vw - 1.5rem);
+        left: calc(100vw - 1.7rem);
+    }
+
+    .theme-togglers {
+        width: 0.5rem;
         top: 0rem;
     }
 }
