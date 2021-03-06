@@ -387,5 +387,6 @@ a.link {
 
     .sticky {
         left: calc(100vw - 1.5rem);
+        top: 0rem;
     }
 }
