@@ -384,4 +384,8 @@ a.link {
         padding-right: 0.07rem;
         padding-bottom: 0.05rem;
     }
+
+    .sticky {
+        left: calc(100vw - 1.5rem);
+    }
 }
