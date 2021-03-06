@@ -1,21 +1,7 @@
-# AnSite
+# anicetnougaret.fr
+Simple Elixir server that serves `priv/static` to `/`. Currently deployed on my own VPS using SystemD, Nginx for reverse-proxies and Certbot for https. The static site if 100% vanilla html and js, it's responsive and even has theme switching!
 
-**TODO: Add description**
+Maybe one day I'll put Phoenix framework and make this thing insane but I don't have time and need for now.
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `an_site` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:an_site, "~> 0.1.0"}
-  ]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/an_site](https://hexdocs.pm/an_site).
+Check it out! [anicetnougaret.fr](https://anicetnougaret.fr/)
 
