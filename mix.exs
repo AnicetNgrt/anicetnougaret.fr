@@ -5,7 +5,7 @@ defmodule AnSite.MixProject do
     [
       app: :an_site,
       version: "0.1.0",
-      elixir: "~> 1.11",
+      elixir: "~> 1.9.1",
       start_permanent: Mix.env() == :prod,
       deps: deps()
     ]
