@@ -25,7 +25,6 @@ body {
 }
 
 .title {
-    transition: all 2s;
     text-align: center;
     color: rgb(43, 68, 100);
     font-family: 'Fira Code', monospace;
