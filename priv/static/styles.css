@@ -9,6 +9,8 @@
 }
 
 body {
+    max-width: 100%;
+    overflow-x: hidden;
     background-attachment:fixed;
     height:100%;
     background-image: linear-gradient(147deg, #051e2c 0%, #000000 54%);
@@ -116,11 +118,59 @@ body {
 
 .center-div {
     margin: 0 auto;
-    margin-top: 30vh;
+    margin-top: 20vh;
     display: table;
 }
 
-@media (max-device-width: 514px) {
+.center-div-no-vertical {
+    margin: 0 auto;
+    margin-top: 2rem;
+    display: table;
+}
+
+#portrait {
+    width: 250px;
+    margin: 0 auto;
+    margin-top: 1rem;
+    display: table;
+    margin-bottom: 1rem;
+    padding: 0.3rem;
+    border: solid 0.1rem rgba(43, 68, 100, 0.76);
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-top: 0.5rem;
+    padding-bottom: .5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box; width: 100%;
+    background-color: rgba(43, 68, 100, 0.288);
+}
+
+.footer > .desc {
+    font-size: 0.5rem;
+    color: rgba(43, 68, 100, 0.76);
+}
+
+.footer > .desc a {
+    color: rgb(43, 68, 100);
+}
+
+.page-title {
+    font-size: 1.5rem;
+}
+
+.desc.long {
+    max-width: 20rem;
+    text-align: left;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+@media (max-aspect-ratio: 1/1) {
 
     .center-div {
         margin: 0 auto;
@@ -166,5 +216,10 @@ body {
 
     .navs > .nav {
         display: block;
+    }
+
+    .footer {
+        position: relative;
+        margin-top: 2rem;
     }
 }
