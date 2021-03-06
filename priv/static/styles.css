@@ -1,5 +1,67 @@
 :root {
     font-size: 30px;
+    --ca: white;
+    --cb: #71ee7c;
+    --cb-t: #73f388a6;
+    --cc: #3ce0a9;
+    --cd: #2da569;
+    --ce: #2b8f79;
+    --cf: #1b6e5c;
+    --cg: #163333;
+
+    --ga1: #1b6e5c;
+    --ga2: #163333;
+
+    --calt1: #75ffc6;
+    --calt2: #e03cbc;
+}
+
+.ocean {
+    --ca: #86d2df;
+    --cb: #3d3e6e;
+    --cb-t: #282550a6;
+    --cc: #20357a;
+    --cd: #305894;
+    --ce: #5a96b8;
+    --cf: #65b2ca;
+    --cg: #86d2df;
+
+    --ga1: #65b2ca;
+    --ga2: #86d2df;
+
+    --calt1: #4e3d6e;
+    --calt2: #693765;
+}
+
+.jade {
+    --ca: white;
+    --cb: #71ee7c;
+    --cb-t: #73f388a6;
+    --cc: #3ce0a9;
+    --cd: #2da569;
+    --ce: #2b8f79;
+    --cf: #1b6e5c;
+    --cg: #163333;
+
+    --calt1: #75ffc6;
+    --calt2: #e03cbc;
+}
+
+.sepia {
+    --ca: #dfb586;
+    --cb: #6e3d3d;
+    --cb-t: #502525a6;
+    --cc: #7a2b20;
+    --cd: #945430;
+    --ce: #b8785a;
+    --cf: #ca8a65;
+    --cg: #dfb586;
+
+    --ga1: #ca8a65;
+    --ga2: #dfb586;
+
+    --calt1: #6e3d3d;
+    --calt2: #693752;
 }
 
 * {
@@ -21,13 +83,14 @@ body {
     overflow-x: hidden;
     background-attachment:fixed;
     height:100%;
-    background-image: linear-gradient(147deg, #2da569 0%, #163333 24%);
-    background-color: #163333;
+    background-image: linear-gradient(147deg, var(--ga1) 0%, var(--ga2) 24%);
+    background-color: var(--cg);
+    margin-top: -6rem;
 }
 
 .title {
     text-align: center;
-    color: #2b8f79;
+    color: var(--ce);
     font-family: 'Fira Code', monospace;
     cursor: default;
 }
@@ -48,13 +111,13 @@ body {
     font-family: 'Fira Code', monospace;
     text-align: center;
     font-size: 0.7rem;
-    color: #3ce0a9;
+    color: var(--cc);
 }
 
 a.link {
     font-family: 'Fira Code', monospace;
-    background-color: #1b6e5c;
-    color: #3ce0a9;
+    background-color: var(--cf);
+    color: var(--cc);
     margin: 0 auto;
     display: block;
     text-align: center;
@@ -77,26 +140,24 @@ a.link {
 
 .link:hover {
     transition: all 0.1s;
-    background-color: #71ee7c;
-    color: white;
-    box-shadow: 0rem 0rem 1rem #73f388a6;
+    background-color: var(--cb);
+    color: var(--ca);
+    box-shadow: 0rem 0rem 1rem var(--cb-t);
     transform: scale(1.01, 1.01);
-    transition: all 0.3s;
 }
 
 .link-container {
-    transition: all 0.3s;
     margin-top: 0.1rem;
     padding: 0.3rem;
-    border: solid 0.1rem #1b6e5c;
+    border: solid 0.1rem var(--cf);
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
 }
 
 .link-container:hover {
     transition: all 0.1s;
-    border: solid 0.1rem #71ee7c;
-    box-shadow: 0rem 0rem 0.5rem #73f388a6, inset 0rem 0rem 0.2rem #73f388a6;
+    border: solid 0.1rem var(--cb);
+    box-shadow: 0rem 0rem 0.5rem var(--cb-t);
 }
 
 .navs {
@@ -120,13 +181,12 @@ a.link {
 }
 
 .nav:hover {
-    transition: transform 0.2s;
+    transition: transform 0.1s;
     transform: scale(1.1);
 }
 
 .nav-title {
-    background-color: #1b6e5c;
-    transition: all 0.3s;
+    background-color: var(--cf);
     margin-top: 0.1rem;
     padding: 0.5rem;
     padding-bottom: 0.2rem;
@@ -136,12 +196,12 @@ a.link {
 }
 
 .nav:hover > .nav-title {
-    background-color: #71ee7c;
-    box-shadow: 0rem 0rem 0.5rem #73f388a6;
+    background-color: var(--cb);
+    box-shadow: 0rem 0rem 0.5rem var(--cb-t);
 }
 
 .nav-title.desc {
-    color: #163333;
+    color: var(--cg);
     font-size: 0.5rem;
 }
 
@@ -164,7 +224,7 @@ a.link {
     display: table;
     margin-bottom: 1rem;
     padding: 0.3rem;
-    border: solid 0.1rem #1b6e5c;
+    border: solid 0.1rem var(--cf);
 }
 
 .footer {
@@ -176,20 +236,20 @@ a.link {
     padding-left: 1rem;
     padding-right: 1rem;
     box-sizing: border-box; width: 100%;
-    background-color: #185f50;
+    background-color: var(--cf);
 }
 
 .footer > .desc {
     font-size: 0.5rem;
-    color: #3ce0a9;
+    color: var(--cc);
 }
 
 .footer > .desc a {
-    color: #75ffc6;
+    color: var(--calt1);
 }
 
 .footer > .desc a:visited {
-    color: #e03cbc;
+    color: var(--calt2);
 }
 
 .page-title {
@@ -203,11 +263,54 @@ a.link {
     margin-right: 1rem;
 }
 
+.sticky{
+    position: sticky;
+    left: calc(100vw - 2rem);
+    z-index: 100;
+    top: -0.5rem;
+    width: 1.5rem;
+}
+
+.theme-togglers {
+    width: auto;
+    transition: all 0.3s;
+    margin-top: 0.1rem;
+    padding: 0.3rem;
+    padding-top: 0.6rem;
+    padding-right: 0.6rem;
+}
+
+.radio {
+    width: 1.3rem;
+    opacity: 0.5;
+    font-family: 'Fira Code', monospace;
+    
+    color: var(--cc);
+    margin: 0 auto;
+    display: block;
+    text-align: left;
+    font-size: 1rem;
+    border-radius: 1rem;
+    padding-left: 0.01rem;
+    padding-right: 0.09rem;
+    cursor: pointer;  
+}
+
+.radio:not(:first-child) {
+    margin-top: 0.15rem;
+}
+
+.radio.toggled {
+    background-color: var(--cb);
+    opacity: 0.7;
+}
+
 @media (max-aspect-ratio: 1/1) {
 
     body {
-        background-color: #163333;
-        background-image: linear-gradient(147deg, #163333 0%, #163333 54%);
+        background-color: var(--cg);
+        background-image: linear-gradient(147deg, var(--cg) 0%, var(--cg) 54%);
+        margin-top: -4.5rem;
     }
 
     .center-div {
@@ -272,5 +375,13 @@ a.link {
         margin-top: 0rem;
         text-align: center;
         font-size: 1.25rem;
+    }
+
+    .radio {
+        width: 0.9rem;
+        font-size: 0.7rem;
+        padding-left: 0.03rem;
+        padding-right: 0.07rem;
+        padding-bottom: 0.05rem;
     }
 }
