@@ -22,6 +22,7 @@ body {
     background-attachment:fixed;
     height:100%;
     background-image: linear-gradient(147deg, #2da569 0%, #163333 24%);
+    background-color: #163333;
 }
 
 .title {
@@ -205,6 +206,7 @@ a.link {
 @media (max-aspect-ratio: 1/1) {
 
     body {
+        background-color: #163333;
         background-image: linear-gradient(147deg, #163333 0%, #163333 54%);
     }
 
