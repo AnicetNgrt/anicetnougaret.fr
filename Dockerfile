@@ -1,5 +1,5 @@
 # Extend from the official Elixir image
-FROM elixir:1.10.2-alpine
+FROM elixir:1.11.3-alpine
 
 # Install required libraries on Alpine
 # note: build-base required to run mix “make” for
